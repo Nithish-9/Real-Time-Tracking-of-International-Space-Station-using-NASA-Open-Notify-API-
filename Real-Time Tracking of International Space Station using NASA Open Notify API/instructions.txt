@@ -1,0 +1,13 @@
+1. Installing the Mysql in Ubuntu
+
+2. command to open Mysql in Ubuntu => mysql -u root -p
+
+3. Execute this command => ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password123#@!';
+
+4. create Database by the name "spaceStation" => Database code present in schema.txt file
+
+5. start the zookeeper server => bin/zookeeper-server-start.sh config/zookeeper.properties
+
+6. start the kafka server => bin/kafka-server-start.sh config/server.properties
+
+7. Run the Apache Spark => spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0 spark_streaming.py
